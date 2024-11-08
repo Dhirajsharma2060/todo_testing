@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Kanban Board</h1>
+
+        <!-- Task Creation Form -->
+        <div class="task-creation form-inline justify-content-center">
+            <input type="text" id="task-title" placeholder="Enter task name" class="form-control mr-2" />
+            <button onclick="createTask()" class="btn btn-primary">Add Task</button>
+        </div>
+
+        <!-- Kanban Board Columns -->
+        <div class="kanban-board row mt-4">
+            <div class="col-lg-4">
+                <div class="kanban-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 class="text-center">To Do</h2>
+                    <div class="task-container" id="todo-tasks"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="kanban-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 class="text-center">In Progress</h2>
+                    <div class="task-container" id="in-progress-tasks"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="kanban-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 class="text-center">Completed</h2>
+                    <div class="task-container" id="completed-tasks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

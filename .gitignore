@@ -1,0 +1,46 @@
+# Ignore environment variable files
+.env
+
+# Ignore virtual environment directory
+venv/
+
+# Byte-compiled and cached Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache and temporary files
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.db-shm
+*.db-wal
+
+# VS Code or PyCharm settings (optional)
+.vscode/
+.idea/
+
+# Ignore static files (if generated at runtime or during build)
+staticfiles/
+media/
+#static/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore build and distribution directories
+build/
+dist/
+*.egg-info/
+
+# Docker-related files (optional)
+docker-compose.override.yml
+Dockerfile
+
+# macOS files
+.DS_Store

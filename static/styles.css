@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kanban-column {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-container {
+    min-height: 300px;
+}
+
+.task-creation {
+    margin: 20px 0;
+}
+
+.task {
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: move;
+}
+
+.task .card {
+    border: none;
+}
+
+.task .card-body {
+    padding: 8px 12px;
+}
+
+.task h5 {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #333;
+}
